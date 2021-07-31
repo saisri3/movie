@@ -1,5 +1,6 @@
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import "./sort.css"
 
 
 export default function Sort(props) {
@@ -13,8 +14,8 @@ export default function Sort(props) {
         <button type="submit" onClick={() =>props.SortBasedDuration()}>sort</button>
        
       <div className="arrows">
-          { props.order === 'descending' && <AiOutlineArrowDown />}
-          {props.order === 'ascending' && <AiOutlineArrowUp />}
+          {props.order === 'descending' ? <AiOutlineArrowDown /> : <AiOutlineArrowUp />}
+          
 			</div>
 
 

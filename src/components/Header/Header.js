@@ -6,6 +6,8 @@ import Data from '../MOCK_DATA.json'
 
 
 
+
+
  
  
 const Header = () => {    
@@ -19,7 +21,7 @@ const Header = () => {
         <div >
           <p>DURATION</p>
        
-
+          
          
         </div>
        

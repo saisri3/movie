@@ -7,34 +7,39 @@ import { useState , useEffect } from 'react';
 import './components/Header/Search.css';
 import AllFilms from './components/AllFilms';
 import Search from './components/Header/Search';
-import { Add } from './components/Add';
 import Sort from './components/Header/Sort';
+import { Add } from './components/Add/Add';
+
 
 
 
 function App() {
   let [movieList, setMovieList] = useState(data)
   // let [searchterm, set_searchterm] = useState("")
+  
 
-  const sort=setMovieList(movieList.sort((obj1, obj2) => {
+  const sorter =  (obj1, obj2) => {
     return obj1.duration < obj2.duration
       ? -1
       : obj1.duration > obj2.duration
         ? 1
         : 0;
-  }))
+  }
 
+  const add_new_movie = (new_movie) => {
+    setMovieList( [ ...movieList , new_movie ] )
+  }
+
+  
   const [order, setorder] = useState('');
   const SortBasedDuration = () => {
     //if order ==== '' sort it in ascending order setOrder
     //else if order ==== 'ascending' sort it in 'descending' order and change the order using setOrder.
     //else sort it in ascending order and setOrder
     if (order === "") {
-      sort();
+      setMovieList(movieList.sort(sorter))
       setorder("ascending");
-      
     }
-
 
     else if(order === 'ascending'){
      
@@ -52,11 +57,15 @@ function App() {
     }
     else{
       
-      sort();
+      setMovieList(movieList.sort(sorter))
       setorder("ascending");
        
     }
   }
+
+  useEffect(() => {
+    SortBasedDuration()
+  } , [movieList])
   
     
 
@@ -83,13 +92,14 @@ function App() {
   
   return (
     <div className="App">
+      <Sort SortBasedDuration={SortBasedDuration} />
       <Header />
-      <SortBasedDuration />
       <Search SearchFunction={SearchFunction}/>
-      <AllFilms movieList={ movieList}/>
-      <Add />
-      <Sort />
-  
+      <AllFilms movieList= { movieList}/>
+      <Add add_new_movie={add_new_movie} />
+      
+      
+
 
     </div>
   );
