@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 216px 216px 216px 216px 216px 216px;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  background-color: rgb(170 202 200);
+  text-align: left;
+  padding-left: 20px;
+}
+.imageheader {
+  padding-left: 20px;
+}
+.arrow {
+  cursor: "pointer";
+  height: 20px;
+}

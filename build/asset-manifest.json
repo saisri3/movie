@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/moviel/static/css/main.6c272e25.chunk.css",
+    "main.js": "/moviel/static/js/main.b2e932aa.chunk.js",
+    "main.js.map": "/moviel/static/js/main.b2e932aa.chunk.js.map",
+    "runtime-main.js": "/moviel/static/js/runtime-main.cd404149.js",
+    "runtime-main.js.map": "/moviel/static/js/runtime-main.cd404149.js.map",
+    "static/js/2.cba0735a.chunk.js": "/moviel/static/js/2.cba0735a.chunk.js",
+    "static/js/2.cba0735a.chunk.js.map": "/moviel/static/js/2.cba0735a.chunk.js.map",
+    "static/js/3.e52cb9f1.chunk.js": "/moviel/static/js/3.e52cb9f1.chunk.js",
+    "static/js/3.e52cb9f1.chunk.js.map": "/moviel/static/js/3.e52cb9f1.chunk.js.map",
+    "index.html": "/moviel/index.html",
+    "static/css/main.6c272e25.chunk.css.map": "/moviel/static/css/main.6c272e25.chunk.css.map",
+    "static/js/2.cba0735a.chunk.js.LICENSE.txt": "/moviel/static/js/2.cba0735a.chunk.js.LICENSE.txt",
+    "static/media/hardcore.jpg": "/moviel/static/media/hardcore.6829ebc1.jpg",
+    "static/media/logo.6ce24c58.svg": "/moviel/static/media/logo.6ce24c58.svg",
+    "static/media/setitup.jpeg": "/moviel/static/media/setitup.a95cd242.jpeg",
+    "static/media/starwars.jpeg": "/moviel/static/media/starwars.59ca2726.jpeg",
+    "static/media/thecrown.jpeg": "/moviel/static/media/thecrown.871e316c.jpeg",
+    "static/media/thesinner.jpg": "/moviel/static/media/thesinner.f5d3b3c2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd404149.js",
+    "static/js/2.cba0735a.chunk.js",
+    "static/css/main.6c272e25.chunk.css",
+    "static/js/main.b2e932aa.chunk.js"
+  ]
+}

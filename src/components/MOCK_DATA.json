@@ -1,0 +1,61 @@
+[
+    {
+        "title":"StarWars:EpisodeVill",
+        "year":2017,
+        "rating":"PG-13",
+        "duration":"2h30m",
+        "image":"starwars.jpeg"
+    },
+    
+    
+    {
+        "title":"Hardcore",
+        "year":2016,
+        "rating":"R",
+        "duration":"1h36m",
+        "image":"hardcore.jpg"
+    },
+    {
+        "title":"The Crown",
+        "year":2017,
+        "rating":"PG-13",
+        "duration":"2h22m",
+        "image":"thecrown.jpeg"
+    },
+    {
+        "title":"Set It Up",
+        "year":2018,
+        "rating":"TV-14",
+        "duration":"1h45m",
+        "image":"setitup.jpeg"
+    },
+    {
+        "title":"StarWars:EpisodeVill",
+        "year":2017,
+        "rating":"PG-13",
+        "duration":"2h21m",
+        "image":"starwars.jpeg"
+    },
+
+    {
+        "title":"StarWars:EpisodeVill",
+        "year":2017,
+        "rating":"PG-13",
+        "duration":"2h33m",
+        "image":"starwars.jpeg"
+    },
+    {
+        "title":"The Sinner",
+        "year":2017,
+        "rating":"TV-MA",
+        "duration":"1h44m",
+        "image":"thesinner.jpg"
+    },
+    {
+        "title":"StarWars:EpisodeVill",
+        "year":2017,
+        "rating":"PG-13",
+        "duration":"2h39m",
+        "image":"starwars.jpeg"
+    }
+]
