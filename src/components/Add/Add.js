@@ -1,33 +1,29 @@
-import {useState} from "react"
-import Add_Form from "./Add_Form"
-import Popup from "./Popup"
+import { useState } from "react";
+import Add_Form from "./AddForm";
 
-export function Add({add_new_movie}) {
 
-      const [show_form, set_show_form] = useState(0)
-      const [isOpen, setIsOpen] = useState(false);//for popup of add
- 
+export function Add({ addNewMovie }) {
+  const [showForm, setShowForm] = useState(1);
+  const [isOpen, setIsOpen] = useState(false); //for popup of add
+
   const togglePopup = () => {
     setIsOpen(!isOpen);
-  }
- 
+  };
 
-      const handleClick = () => {
-            set_show_form(1)
-      }
+  const handleClick = () => {
+    setShowForm(1);
+  };
 
-      const add_movie = (data) => {
-            add_new_movie(data)
-            set_show_form(0)
-      }
+  const addMovie = (data) => {
+    addNewMovie(data);
+    setShowForm(0);
+  };
 
-    return (
-      <div className="add">
-            <button onClick={handleClick}>ADD NEW MOVIE</button>
-                {show_form ? <Add_Form add_movie={add_movie} /> : null}
-                
-            
-      </div>
-
-)
+  return (
+    <div className="add">
+      <button onClick={handleClick}>ADD NEW MOVIE</button>
+      {showForm ? <Add_Form addMovie={addMovie} /> : null}
+    </div>
+);
+    
 }
