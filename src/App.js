@@ -9,8 +9,8 @@ import AllFilms from "./components/AllFilms";
 import Search from "./components/Header/Search";
 import Sort from "./components/Header/Sort";
 import { Add } from "./components/Add/Add";
-import { AiOutlineArrowDown } from "react-icons/ai";
-import { AiOutlineArrowUp } from "react-icons/ai";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import AddForm from "./components/Add/AddForm";
 
 function App() {
@@ -80,15 +80,12 @@ function App() {
   // console.log(movieList);
 
   return (
-    <div className="App">
-      <Sort SortBasedDuration={SortBasedDuration} />
-      <div className="arrows">
-        {order === "ascending" ? <AiOutlineArrowDown /> : <AiOutlineArrowUp />}
-      </div>
-      <Header />
+    <div className="App">     
+      <Header SortBasedDuration={SortBasedDuration} />
       <Search SearchFunction={SearchFunction} />
-      <AllFilms movieList={movieList} />
       <AddForm addNewMovie={addNewMovie} />
+      <AllFilms movieList={movieList} />
+      
     </div>
   );
 }

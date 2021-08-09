@@ -24,9 +24,6 @@ export default function Search(props) {
           onChange={(e) => props.SearchFunction(e.target.value)}
         />
 
-        <button className="go" type="submit">
-          GO
-        </button>
         
       </form>
     </div>

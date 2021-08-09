@@ -2,16 +2,31 @@
   display: grid;
   height: 100px;
   grid-template-columns: 216px 216px 216px 216px 216px;
+
   border-top: 2px solid whitesmoke;
   border-bottom: 2px solid whitesmoke;
   background-color: rgb(170 202 200);
   text-align: left;
   padding-left: 20px;
 }
-.imageheader {
+.image_header {
   padding-left: 20px;
+  margin-top: 30px;
 }
 .arrow {
   cursor: "pointer";
   height: 20px;
+  color: aliceblue;
+  padding-bottom: 0rem;
+}
+
+.durat {
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  padding-top: 2rem;
+  margin-bottom: 0rem;
+}
+.title_ {
+  margin-top: 30px;
 }

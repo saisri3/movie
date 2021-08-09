@@ -2,10 +2,6 @@ body {
   background-color: black;
 }
 
-p {
-  margin-top: 35px;
-}
-
 .wrapper {
   position: center;
   display: grid;
